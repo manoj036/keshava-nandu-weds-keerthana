@@ -1,0 +1,8 @@
+# Card scans used to make the artwork (not needed online)
+_card-source/
+# Full-size original photos (only photos/web is published)
+photos/originals/
+.DS_Store
+# Unused since the photo gallery was removed
+photos/
+tools/

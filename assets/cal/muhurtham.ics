@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Gubba Family//Wedding Invitation//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:muhurtham-20261125@kk-wedding
+DTSTAMP:20261114T000000Z
+DTSTART:20261125T035500Z
+DTEND:20261125T070000Z
+SUMMARY:Keshava Nandu weds Keerthana — Sumuhurtham
+LOCATION:Devi Convention\, Yenkepalle\, Bakaram Road\, Moinabad Mdl.\, R.R. Dist.
+DESCRIPTION:Sumuhurtham at 09:25 AM IST (Dhanur Lagnam). Map: https://maps.app.goo.gl/5psFfZjRLcySoqzb9
+URL:https://maps.app.goo.gl/5psFfZjRLcySoqzb9
+BEGIN:VALARM
+TRIGGER:-PT3H
+ACTION:DISPLAY
+DESCRIPTION:Sumuhurtham at 09:25 AM
+END:VALARM
+END:VEVENT
+END:VCALENDAR
