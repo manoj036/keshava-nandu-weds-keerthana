@@ -6,8 +6,8 @@ A bilingual (English / తెలుగు) wedding invitation website, using the
 - Reception: Sat 28 Nov 2026, 7:00 PM IST — Premranga Gardens, Jadcherla
 
 ## Share links
-- English: `https://manoj036.github.io/keshava-weds-keerthana/`  (default)
-- Telugu:  `https://manoj036.github.io/keshava-weds-keerthana/?lang=te`
+- English: `https://manoj036.github.io/keshava-nandu-weds-keerthana/`  (default)
+- Telugu:  `https://manoj036.github.io/keshava-nandu-weds-keerthana/?lang=te`
 
 ## Preview locally
 Open `index.html` in a browser, or run `python3 -m http.server` in this folder and visit http://localhost:8000.
@@ -17,7 +17,7 @@ Open `index.html` in a browser, or run `python3 -m http.server` in this folder a
 
 **GitHub Pages:** push this folder to a GitHub repo, then go to *Settings → Pages → Deploy from branch → main / root*.
 
-After deploying, open `index.html` and replace the two `https://manoj036.github.io/keshava-weds-keerthana/` placeholders in the `og:` tags with the real address, so the WhatsApp preview shows the temple-arch image.
+After deploying, open `index.html` and replace the two `https://manoj036.github.io/keshava-nandu-weds-keerthana/` placeholders in the `og:` tags with the real address, so the WhatsApp preview shows the temple-arch image.
 
 ## Files
 - `index.html`: the page (all text in both languages)
