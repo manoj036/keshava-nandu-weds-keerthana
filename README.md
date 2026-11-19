@@ -6,9 +6,9 @@ A bilingual (English / తెలుగు) wedding invitation website, using the
 - Reception: Sat 28 Nov 2026, 7:00 PM IST — Premranga Gardens, Jadcherla
 
 ## Share links
-- English: `https://manoj036.github.io/keshava-nandu-weds-keerthana/`  (default)
-- Telugu:  `https://manoj036.github.io/keshava-nandu-weds-keerthana/?lang=te`
-- Events only (short page): `https://manoj036.github.io/keshava-nandu-weds-keerthana/events.html`  (Telugu: add `?lang=te`)
+- Telugu:  `https://manoj036.github.io/keshava-nandu-weds-keerthana/`  (default)
+- English: `https://manoj036.github.io/keshava-nandu-weds-keerthana/?lang=en`
+- Events only (short page): `https://manoj036.github.io/keshava-nandu-weds-keerthana/events.html`  (English: add `?lang=en`)
 
 ## Preview locally
 Open `index.html` in a browser, or run `python3 -m http.server` in this folder and visit http://localhost:8000.

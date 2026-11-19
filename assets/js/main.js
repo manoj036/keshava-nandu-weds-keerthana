@@ -3,22 +3,24 @@
   var root = document.documentElement;
 
   /* ---------- Language ---------- */
-  var LANG_KEY = "kk-lang";
+  /* Telugu is the default. A visitor's own choice is remembered; "kk-lang-choice" replaces the old
+     "kk-lang" key, which was also written on every visit and so held "en" for everyone. */
+  var LANG_KEY = "kk-lang-choice";
   function store(k, v) { try { v === undefined ? (v = localStorage.getItem(k)) : localStorage.setItem(k, v); return v; } catch (e) { return null; } }
 
-  function setLang(lang) {
-    if (lang !== "te") lang = "en";
+  function setLang(lang, remember) {
+    if (lang !== "en") lang = "te";
     root.setAttribute("data-lang", lang);
     root.setAttribute("lang", lang);
     document.querySelectorAll("[data-set-lang]").forEach(function (b) {
       b.setAttribute("aria-pressed", String(b.getAttribute("data-set-lang") === lang));
     });
-    store(LANG_KEY, lang);
+    if (remember) store(LANG_KEY, lang);
   }
   var urlLang = new URLSearchParams(location.search).get("lang");
-  var initialLang = urlLang === "te" || urlLang === "en" ? urlLang : (store(LANG_KEY) || "en");
+  var initialLang = urlLang === "te" || urlLang === "en" ? urlLang : (store(LANG_KEY) || "te");
   document.querySelectorAll("[data-set-lang]").forEach(function (b) {
-    b.addEventListener("click", function () { setLang(b.getAttribute("data-set-lang")); });
+    b.addEventListener("click", function () { setLang(b.getAttribute("data-set-lang"), true); });
   });
 
   setLang(initialLang);
