@@ -421,3 +421,30 @@ summary.btn::-webkit-details-marker { display: none; }
 .tl-ev .dress { margin-bottom: 2px; }
 .trio [data-l="te"], .hosts-blessing [data-l="te"] { font-family: var(--telugu-display); font-size: 1.1em; }
 .host-main [data-l="te"] { font-family: var(--telugu-display); font-size: 21px; }
+
+/* ===== events.html: short page, circle photo of the couple beside "Wedding Events" ===== */
+.evh {
+  display: flex; align-items: center; justify-content: center; gap: 14px;
+  max-width: 620px; margin: 0 auto; padding-top: calc(62px + env(safe-area-inset-top));
+}
+.evh-photo {
+  flex: none; width: clamp(92px, 27vw, 132px); height: auto; aspect-ratio: 1; border-radius: 50%; object-fit: cover;
+  border: 2px solid var(--gold); outline: 1px solid var(--gold-soft); outline-offset: 3px;
+  box-shadow: 0 10px 22px -12px rgba(94,16,39,.55); background: #2a1c14;
+}
+.evh-text { min-width: 0; text-align: left; }
+.evh-title { margin: 0; line-height: 1.15; font-size: clamp(31px, 9.4vw, 46px); white-space: nowrap; }
+.evh-title [data-l="te"] { display: block; line-height: 1.4; font-size: clamp(24px, 7vw, 32px); }
+.evh p { margin: 0; }
+.evh-names { font-weight: 700; font-size: clamp(16.5px, 4.6vw, 21px); color: var(--maroon-deep); line-height: 1.3; }
+.evh-names [data-l="te"] { font-family: var(--telugu-display); font-weight: 400; font-size: 1.08em; line-height: 1.5; }
+.evh-dates { margin-top: 4px !important; font-weight: 600; font-size: clamp(13.5px, 3.7vw, 16px); line-height: 1.35; color: var(--gold-text); font-variant-numeric: lining-nums; }
+.evh-dates .hd { display: block; } .evh-dates .hd-dot { display: none; }
+.evh-dates [data-l="te"] { line-height: 1.6; }
+.evh-join { margin-top: 2px !important; font-style: italic; font-size: clamp(14.5px, 3.9vw, 16.5px); color: var(--muted); }
+.evh-join [data-l="te"] { font-style: normal; font-size: 13.5px; }
+@media (min-width: 701px) { .evh { gap: 22px; padding-top: 34px; } }
+.events-page .events { margin-top: 22px; margin-bottom: 0; }
+.events-page .timeline { margin-bottom: 0; }
+.evp-foot { padding-top: 28px; }
+.evp-foot .btn [data-l="te"] { font-style: normal; }

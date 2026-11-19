@@ -8,6 +8,7 @@ A bilingual (English / తెలుగు) wedding invitation website, using the
 ## Share links
 - English: `https://manoj036.github.io/keshava-nandu-weds-keerthana/`  (default)
 - Telugu:  `https://manoj036.github.io/keshava-nandu-weds-keerthana/?lang=te`
+- Events only (short page): `https://manoj036.github.io/keshava-nandu-weds-keerthana/events.html`  (Telugu: add `?lang=te`)
 
 ## Preview locally
 Open `index.html` in a browser, or run `python3 -m http.server` in this folder and visit http://localhost:8000.
@@ -21,6 +22,7 @@ After deploying, open `index.html` and replace the two `https://manoj036.github.
 
 ## Files
 - `index.html`: the page (all text in both languages)
+- `events.html`: short page with only the wedding events. Its schedule is a copy of the one in `index.html`, so change times or links in both files
 - `assets/css/style.css`, `assets/js/main.js`: styling, language toggle, countdown, gallery
 - `assets/art/`: artwork cropped from the card (Ganesha, Venkateswara–Padmavathi, Kalyanam, arch, pavilion, mandapam)
 - `assets/cal/*.ics`: calendar entries for both events
